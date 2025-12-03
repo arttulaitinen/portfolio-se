@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function CICDPipeline() {
+export default function CICDPipelineView() {
   return (
     <div className="w-full bg-white">
       <div className="w-full px-4 sm:px-6 lg:px-8 py-12">

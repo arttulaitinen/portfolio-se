@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-export default function DesignDoc() {
+export default function DesignDocumentView() {
   return (
     <div className="w-full bg-white">
       <div className="w-full px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4 text-gray-900">Design Doc</h1>
+          <h1 className="text-4xl font-bold mb-4 text-gray-900">Design Document</h1>
           <p className="text-xl text-gray-600 mb-8">Technical design documentation and architecture</p>
 
           <div className="prose prose-lg max-w-none">
