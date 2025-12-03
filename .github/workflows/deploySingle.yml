@@ -1,4 +1,4 @@
-name: Deploy Single (placeholder, disabled)
+name: Build and deploy as a single job pipeline
 
 on:
   workflow_dispatch:
