@@ -1,46 +1,61 @@
 import { Link } from "react-router-dom";
+import miroPipeline from "../../assets/miropipeline.png?url";
+import multiPipeline from "../../assets/multipipeline.png?url";
+import singlePipeline from "../../assets/singlepipeline.png?url";
 
 export default function CICDPipelineView() {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full min-h-screen bg-gray-50">
       <div className="w-full px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4 text-gray-900">CI/CD Pipeline</h1>
-          <p className="text-xl text-gray-600 mb-8">Implementation and best practices for continuous integration and deployment</p>
-
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Overview</h2>
-            <p className="text-gray-700 mb-4">
-              Add your CI/CD pipeline documentation here. This section should include:
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md px-6 sm:px-10 py-10">
+          <header className="mb-10 border-b border-gray-200 pb-6">
+            <h1 className="text-4xl font-bold mb-2 text-gray-900">CI/CD Pipeline</h1>
+            <p className="text-lg text-gray-600">
+              Technical demonstration of CI/CD practices
             </p>
-            <ul className="list-disc list-inside text-gray-700 mb-4">
-              <li>Architecture and design of your pipeline</li>
-              <li>Tools and technologies used (GitHub Actions, Jenkins, GitLab CI, etc.)</li>
-              <li>Build, test, and deployment stages</li>
-              <li>Automation strategies</li>
-              <li>Monitoring and error handling</li>
-            </ul>
+          </header>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Implementation Details</h2>
-            <p className="text-gray-700 mb-4">
-              Provide technical details about your pipeline implementation, including configuration files, 
-              scripts, and best practices you followed.
-            </p>
+          <div className="space-y-8 text-gray-800 leading-relaxed">
+            <section>
+              <h2 className="text-2xl font-semibold text-gray-900">Overview</h2>
+              
+               <div>
+                  <img 
+                    src={miroPipeline} 
+                    alt="Miro Pipeline Diagram"
+                    className="w-full rounded-lg shadow-md border border-gray-200"
+                  />
+                </div>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Results & Impact</h2>
-            <p className="text-gray-700 mb-4">
-              Describe the outcomes of your CI/CD implementation, such as deployment frequency, 
-              reduced manual effort, or improved code quality.
-            </p>
+              <div className="mt-8 space-y-8">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Single Pipeline</h3>
+                  <img 
+                    src={singlePipeline} 
+                    alt="Single Pipeline Architecture"
+                    className="w-full rounded-lg shadow-md border border-gray-200"
+                  />
+                </div>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Lessons Learned</h2>
-            <p className="text-gray-700 mb-4">
-              Share what you learned from implementing and maintaining a CI/CD pipeline.
-            </p>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Multi Pipeline</h3>
+                  <img 
+                    src={multiPipeline} 
+                    alt="Multi Pipeline Architecture"
+                    className="w-full rounded-lg shadow-md border border-gray-200"
+                  />
+                </div>
+
+              </div>
+            </section>
+
           </div>
 
           <div className="mt-12">
-            <Link to="/" className="inline-block px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition">
+            <Link
+              to="/"
+              className="inline-block px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition"
+            >
               ← Back to Portfolio
             </Link>
           </div>

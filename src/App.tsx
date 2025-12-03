@@ -12,7 +12,10 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomeView />} />
-        <Route path="/internship-reflection" element={<InternshipReflectionView />} />
+        <Route
+          path="/internship-reflection"
+          element={<InternshipReflectionView />}
+        />
         <Route path="/ci-cd-pipeline" element={<CICDPipelineView />} />
         <Route path="/design-doc" element={<DesignDocumentView />} />
         <Route path="*" element={<HomeView />} />
