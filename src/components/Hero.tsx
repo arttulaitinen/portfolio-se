@@ -1,4 +1,4 @@
-import skojImage from "../assets/skoj.PNG?url";
+import skojImage from "../assets/skoj.png?url";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
